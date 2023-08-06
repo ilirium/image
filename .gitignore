@@ -20,3 +20,6 @@
 /.rust/
 rusti.sh
 Cargo.lock
+
+# *** Modified in the branch ***
+.idea
