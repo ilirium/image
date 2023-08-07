@@ -1192,10 +1192,10 @@ pub struct SubImageInner<I> {
 }
 
 /// Alias to access Pixel behind a reference
-type DerefPixel<I> = <<I as Deref>::Target as GenericImageView>::Pixel;
+pub type DerefPixel<I> = <<I as Deref>::Target as GenericImageView>::Pixel;
 
 /// Alias to access Subpixel behind a reference
-type DerefSubpixel<I> = <DerefPixel<I> as Pixel>::Subpixel;
+pub type DerefSubpixel<I> = <DerefPixel<I> as Pixel>::Subpixel;
 
 impl<I> SubImage<I> {
     /// Construct a new subimage

@@ -281,14 +281,14 @@ pub mod codecs {
     pub mod webp;
 }
 
-mod animation;
+pub mod animation;
 #[path = "buffer.rs"]
-mod buffer_;
-mod color;
-mod dynimage;
-mod image;
-mod traits;
-mod utils;
+pub mod buffer_;
+pub mod color;
+pub mod dynimage;
+pub mod image;
+pub mod traits;
+pub mod utils;
 
 // Can't use the macro-call itself within the `doc` attribute. So force it to eval it as part of
 // the macro invocation.
